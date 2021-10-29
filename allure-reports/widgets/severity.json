@@ -1,0 +1,41 @@
+[ {
+  "uid" : "e9fd9d3c05a22c87",
+  "name" : "test_mainnetActorById",
+  "time" : {
+    "start" : 1631855287420,
+    "stop" : 1631855288469,
+    "duration" : 1049
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "46884a60394712ba",
+  "name" : "test_mainnetWalletStatisticalIndicators",
+  "time" : {
+    "start" : 1631855289280,
+    "stop" : 1631855292164,
+    "duration" : 2884
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "426d0bc29bbb5a6d",
+  "name" : "test_calibrationActorById",
+  "time" : {
+    "start" : 1631855288470,
+    "stop" : 1631855289278,
+    "duration" : 808
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cabba4d00c32f80d",
+  "name" : "test_calibrationWalletStatisticalIndicators",
+  "time" : {
+    "start" : 1631855292166,
+    "stop" : 1631855293590,
+    "duration" : 1424
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

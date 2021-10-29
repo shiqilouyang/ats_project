@@ -1,0 +1,43 @@
+<environment>
+    <parameter>
+        <key>author</key>
+        <value>xushuai</value>
+    </parameter>
+    <parameter>
+        <key>email</key>
+        <value>shiqiloudeyang@gmail.com</value>
+    </parameter>
+    <parameter>
+        <key>Browser</key>
+        <value>Chrome</value>
+    </parameter>
+    <parameter>
+        <key>Browser.Version</key>
+        <value>63.0</value>
+    </parameter>
+    <parameter>
+        <key>Stand</key>
+        <value>Production</value>
+    </parameter>
+    <parameter>
+        <key>systemVersion</key>
+        <value>mac</value>
+    </parameter>
+    <parameter>
+        <key>pythonVersion</key>
+        <value>3.8.2</value>
+    </parameter>
+    <parameter>
+        <key>projectName</key>
+        <value>fis_project</value>
+    </parameter>
+    <parameter>
+        <key>author</key>
+        <value>xushuai</value>
+    </parameter>
+    <parameter>
+        <key>email</key>
+        <value>shiqiloudeyang@gmail.com</value>
+    </parameter>
+</environment>
+

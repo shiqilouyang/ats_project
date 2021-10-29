@@ -1,0 +1,69 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "fiveTokenTest",
+    "children" : [ {
+      "name" : "test_ActorById",
+      "children" : [ {
+        "name" : "test_mainnetActorById",
+        "uid" : "e9fd9d3c05a22c87",
+        "parentUid" : "3611c2ec1170ad7cd2a9499fd2645ee3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1631855287420,
+          "stop" : 1631855288469,
+          "duration" : 1049
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_calibrationActorById",
+        "uid" : "426d0bc29bbb5a6d",
+        "parentUid" : "3611c2ec1170ad7cd2a9499fd2645ee3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1631855288470,
+          "stop" : 1631855289278,
+          "duration" : 808
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3611c2ec1170ad7cd2a9499fd2645ee3"
+    }, {
+      "name" : "test_WalletStatisticalIndicators",
+      "children" : [ {
+        "name" : "test_mainnetWalletStatisticalIndicators",
+        "uid" : "46884a60394712ba",
+        "parentUid" : "3a651b33405d904bed4da474dad78a1c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1631855289280,
+          "stop" : 1631855292164,
+          "duration" : 2884
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_calibrationWalletStatisticalIndicators",
+        "uid" : "cabba4d00c32f80d",
+        "parentUid" : "3a651b33405d904bed4da474dad78a1c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1631855292166,
+          "stop" : 1631855293590,
+          "duration" : 1424
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3a651b33405d904bed4da474dad78a1c"
+    } ],
+    "uid" : "b5036c6f5d68e562a1696701eb30ee53"
+  } ]
+}

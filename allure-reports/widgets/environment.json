@@ -1,0 +1,25 @@
+[ {
+  "values" : [ "xushuai" ],
+  "name" : "author"
+}, {
+  "values" : [ "shiqiloudeyang@gmail.com" ],
+  "name" : "email"
+}, {
+  "values" : [ "Chrome" ],
+  "name" : "Browser"
+}, {
+  "values" : [ "63.0" ],
+  "name" : "Browser.Version"
+}, {
+  "values" : [ "Production" ],
+  "name" : "Stand"
+}, {
+  "values" : [ "mac" ],
+  "name" : "systemVersion"
+}, {
+  "values" : [ "3.8.2" ],
+  "name" : "pythonVersion"
+}, {
+  "values" : [ "fis_project" ],
+  "name" : "projectName"
+} ]

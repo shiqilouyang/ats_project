@@ -1,0 +1,57 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "test_mainnetActorById",
+    "uid" : "e9fd9d3c05a22c87",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1631855287420,
+      "stop" : 1631855288469,
+      "duration" : 1049
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_calibrationActorById",
+    "uid" : "426d0bc29bbb5a6d",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1631855288470,
+      "stop" : 1631855289278,
+      "duration" : 808
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_mainnetWalletStatisticalIndicators",
+    "uid" : "46884a60394712ba",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1631855289280,
+      "stop" : 1631855292164,
+      "duration" : 2884
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_calibrationWalletStatisticalIndicators",
+    "uid" : "cabba4d00c32f80d",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1631855292166,
+      "stop" : 1631855293590,
+      "duration" : 1424
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  } ]
+}

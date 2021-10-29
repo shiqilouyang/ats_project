@@ -1,0 +1,68 @@
+{
+  "uid" : "cabba4d00c32f80d",
+  "name" : "test_calibrationWalletStatisticalIndicators",
+  "fullName" : "fiveTokenTest.test_WalletStatisticalIndicators#test_calibrationWalletStatisticalIndicators",
+  "historyId" : "eab5f797d4345066f9bc4d89232b15ce",
+  "time" : {
+    "start" : 1631855292166,
+    "stop" : 1631855293590,
+    "duration" : 1424
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "fivetoken_calibration_url",
+    "time" : {
+      "start" : 1631855292165,
+      "stop" : 1631855292165,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "fiveTokenTest"
+  }, {
+    "name" : "suite",
+    "value" : "test_WalletStatisticalIndicators"
+  }, {
+    "name" : "host",
+    "value" : "xudeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "6037-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "fiveTokenTest.test_WalletStatisticalIndicators"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "cabba4d00c32f80d.json",
+  "parameterValues" : [ ]
+}

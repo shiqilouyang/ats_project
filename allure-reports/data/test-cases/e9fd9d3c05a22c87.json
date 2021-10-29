@@ -1,0 +1,68 @@
+{
+  "uid" : "e9fd9d3c05a22c87",
+  "name" : "test_mainnetActorById",
+  "fullName" : "fiveTokenTest.test_ActorById#test_mainnetActorById",
+  "historyId" : "daac4d7b137a6d579050f9689c2eac76",
+  "time" : {
+    "start" : 1631855287420,
+    "stop" : 1631855288469,
+    "duration" : 1049
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "fivetoken_mainnet_url",
+    "time" : {
+      "start" : 1631855287420,
+      "stop" : 1631855287420,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "fiveTokenTest"
+  }, {
+    "name" : "suite",
+    "value" : "test_ActorById"
+  }, {
+    "name" : "host",
+    "value" : "xudeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "6037-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "fiveTokenTest.test_ActorById"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e9fd9d3c05a22c87.json",
+  "parameterValues" : [ ]
+}

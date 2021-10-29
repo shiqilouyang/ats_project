@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="24" time="5.681" timestamp="2021-10-09T13:47:43.985073" hostname="xudeMacBook-Pro.local"><testcase classname="fiveTokenTest.test_actor_id" name="test_mainnetActorid" time="0.215" /><testcase classname="fiveTokenTest.test_actor_id" name="test_calibrationActorid" time="0.128" /><testcase classname="fiveTokenTest.test_actor_message" name="test_mainnet_actor_message" time="0.181"><failure message="KeyError: 'mid'">fivetoken_mainnet_url = 'http://192.168.1.161:8081/api/test', fivetoken_mainnet_bls = 'f3xhhhvzzkmlsfhnuzaa7ebhbchycovesir2viykyjrsxvj56urabh4h7sm3d2seqdky326m32vufqhjttgwpq'
+fivetoken_mainnet_multisig_address = 'f2l265y6jz5qrft54366kv3ubrkxhflb4n2leiwpi'
+
+    def test_mainnet_actor_message(fivetoken_mainnet_url,fivetoken_mainnet_bls,fivetoken_mainnet_multisig_address):
+        ''' 查询地址普通消息列表 '''
+    
+        header = {'Content-Type': 'application/json'}
+    
+        # f2 地址
+        url = fivetoken_mainnet_url+'/actor/messages?direction=down&amp;limit=10&amp;actor={}'.format(fivetoken_mainnet_multisig_address)
+        url_down_mid = fivetoken_mainnet_url+'/actor/messages?direction=down&amp;limit=10&amp;actor={}&amp;mid={}'.format(fivetoken_mainnet_multisig_address,116552300242)
+        url_up_mid = fivetoken_mainnet_url+'/actor/messages?direction=up&amp;limit=10&amp;actor={}&amp;mid={}'.format(fivetoken_mainnet_multisig_address,116552300242)
+    
+    
+        # 新地址
+        url1 = fivetoken_mainnet_url + '/actor/messages?direction=down&amp;limit=10&amp;actor={}'.format(fivetoken_mainnet_bls)
+    
+        re = requests.get(url,headers=header)
+        try:
+            assert json.loads(re.text).get("data").get("messages") is not None
+        except  AttributeError as e:
+            print(json.loads(re.text))
+        except Exception:
+            print(url)
+            assert json.loads(re.text).get("data").get("messages") is not None
+    
+        re = requests.get(url1,headers=header)
+        try:
+            assert json.loads(re.text).get("data").get('messages') is None
+        except  AttributeError as e:
+            print(json.loads(re.text))
+        except Exception:
+            print(url1)
+            assert json.loads(re.text).get("data").get('messages') is None
+        re = requests.get(url_down_mid, headers=header)
+        try:
+&gt;           assert json.loads(re.text).get("data").get('messages')[-1]['mid'] == '116553000300'
+E           KeyError: 'mid'
+
+fiveTokenTest/test_actor_message.py:37: KeyError
+
+During handling of the above exception, another exception occurred:
+
+fivetoken_mainnet_url = 'http://192.168.1.161:8081/api/test', fivetoken_mainnet_bls = 'f3xhhhvzzkmlsfhnuzaa7ebhbchycovesir2viykyjrsxvj56urabh4h7sm3d2seqdky326m32vufqhjttgwpq'
+fivetoken_mainnet_multisig_address = 'f2l265y6jz5qrft54366kv3ubrkxhflb4n2leiwpi'
+
+    def test_mainnet_actor_message(fivetoken_mainnet_url,fivetoken_mainnet_bls,fivetoken_mainnet_multisig_address):
+        ''' 查询地址普通消息列表 '''
+    
+        header = {'Content-Type': 'application/json'}
+    
+        # f2 地址
+        url = fivetoken_mainnet_url+'/actor/messages?direction=down&amp;limit=10&amp;actor={}'.format(fivetoken_mainnet_multisig_address)
+        url_down_mid = fivetoken_mainnet_url+'/actor/messages?direction=down&amp;limit=10&amp;actor={}&amp;mid={}'.format(fivetoken_mainnet_multisig_address,116552300242)
+        url_up_mid = fivetoken_mainnet_url+'/actor/messages?direction=up&amp;limit=10&amp;actor={}&amp;mid={}'.format(fivetoken_mainnet_multisig_address,116552300242)
+    
+    
+        # 新地址
+        url1 = fivetoken_mainnet_url + '/actor/messages?direction=down&amp;limit=10&amp;actor={}'.format(fivetoken_mainnet_bls)
+    
+        re = requests.get(url,headers=header)
+        try:
+            assert json.loads(re.text).get("data").get("messages") is not None
+        except  AttributeError as e:
+            print(json.loads(re.text))
+        except Exception:
+            print(url)
+            assert json.loads(re.text).get("data").get("messages") is not None
+    
+        re = requests.get(url1,headers=header)
+        try:
+            assert json.loads(re.text).get("data").get('messages') is None
+        except  AttributeError as e:
+            print(json.loads(re.text))
+        except Exception:
+            print(url1)
+            assert json.loads(re.text).get("data").get('messages') is None
+        re = requests.get(url_down_mid, headers=header)
+        try:
+            assert json.loads(re.text).get("data").get('messages')[-1]['mid'] == '116553000300'
+        except  AttributeError as e:
+            print(json.loads(re.text))
+        except Exception as e:
+            print(url_down_mid)
+&gt;           assert json.loads(re.text).get("data").get('messages')[-1]['mid'] == '116553000300'
+E           KeyError: 'mid'
+
+fiveTokenTest/test_actor_message.py:42: KeyError</failure></testcase><testcase classname="fiveTokenTest.test_actor_message" name="test_calibration_actor_message" time="0.186"><failure message="KeyError: 'mid'">fivetoken_calibration_url = 'http://192.168.1.161:9091/api/test', fivetoken_calibration_bls = 't3una2hb5hrlrb6zgaycjrexa5tl5eyofwmcvcl6cg2zmymb4zj4zalnk3du5bwkguzdv273cexgb5oaqu6bpa'
+fivetoken_calibration_multisig_address = 't2i35vaqpkqpx3rcmqpttayaa3k4b7qm2fgrqiq3q'
+
+    def test_calibration_actor_message(fivetoken_calibration_url,fivetoken_calibration_bls,fivetoken_calibration_multisig_address):
+        ''' 查询地址普通消息列表 '''
+    
+        header = {'Content-Type': 'application/json'}
+    
+        # f2 地址
+        url = fivetoken_calibration_url+'/actor/messages?direction=down&amp;limit=10&amp;actor={}'.format(fivetoken_calibration_multisig_address)
+        url_down_mid = fivetoken_calibration_url+'/actor/messages?direction=down&amp;limit=10&amp;actor={}&amp;mid={}'.format(fivetoken_calibration_multisig_address,29188600024)
+        url_up_mid = fivetoken_calibration_url+'/actor/messages?direction=up&amp;limit=10&amp;actor={}&amp;mid={}'.format(fivetoken_calibration_multisig_address,29188900022)
+    
+        # 新地址
+        url1 = fivetoken_calibration_url+'/actor/messages?direction=down&amp;limit=10&amp;actor={}'.format(fivetoken_calibration_bls)
+    
+        re = requests.get(url,headers=header)
+        try:
+            assert json.loads(re.text).get("data").get('messages') is not None
+        except  AttributeError as e:
+            print(json.loads(re.text))
+        re = requests.get(url1,headers=header)
+        try:
+            assert json.loads(re.text).get("data").get('messages') is None
+        except  AttributeError as e:
+            print(json.loads(re.text))
+    
+        re = requests.get(url_down_mid, headers=header)
+        try:
+&gt;           assert json.loads(re.text).get("data").get('messages')[-1]['mid'] == '29188900022'
+E           KeyError: 'mid'
+
+fiveTokenTest/test_actor_message.py:83: KeyError</failure></testcase><testcase classname="fiveTokenTest.test_actor_msig_deposits" name="test_mainnet_actor_msig_deposits" time="0.164" /><testcase classname="fiveTokenTest.test_actor_msig_deposits" name="test_calibration_actor_msig_deposits" time="0.051" /><testcase classname="fiveTokenTest.test_actor_msig_state" name="test_mainnetActor_msig_state" time="0.073" /><testcase classname="fiveTokenTest.test_actor_msig_state" name="test_calibrationActor_msig_state" time="0.557" /><testcase classname="fiveTokenTest.test_actor_type" name="test_mainnetActortype" time="0.169" /><testcase classname="fiveTokenTest.test_actor_type" name="test_calibrationActortype" time="0.097" /><testcase classname="fiveTokenTest.test_balance" name="test_mainnetActorbalance" time="0.161" /><testcase classname="fiveTokenTest.test_balance" name="test_calibrationActorbalance" time="0.120" /><testcase classname="fiveTokenTest.test_message" name="test_mainnetmessage" time="0.078" /><testcase classname="fiveTokenTest.test_message" name="test_calibrationmessage" time="0.075" /><testcase classname="fiveTokenTest.test_miner_active" name="test_mainnet_miner_active" time="1.143" /><testcase classname="fiveTokenTest.test_miner_active" name="test_calibration_miner_active" time="0.189" /><testcase classname="fiveTokenTest.test_miner_balances" name="test_mainnet_miner_balances" time="0.720" /><testcase classname="fiveTokenTest.test_miner_base" name="test_mainnet_miner_base" time="0.039" /><testcase classname="fiveTokenTest.test_miner_indicator" name="test_mainnet_miner_indicator" time="0.138" /><testcase classname="fiveTokenTest.test_miner_power_24h" name="test_mainnet_miner_power_24h" time="0.162" /><testcase classname="fiveTokenTest.test_propose_detail" name="test_mainnet_propose_detail" time="0.080" /><testcase classname="fiveTokenTest.test_propose_detail" name="test_calibration_propose_detail" time="0.073" /><testcase classname="fiveTokenTest.test_recommend_fee" name="test_mainnet_recommend_fee" time="0.451" /><testcase classname="fiveTokenTest.test_recommend_fee" name="test_calibration_recommend_fee" time="0.148" /></testsuite></testsuites>
